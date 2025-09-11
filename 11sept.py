@@ -33,7 +33,7 @@ print("age is  :",p.age)
 
 # ex :3 private  : 
 
-class employee : 
+"""class employee : 
     __name ="deyan" # __name ,__age ==>  private data member 
     __age =19 
 
@@ -44,3 +44,51 @@ e=employee()
 e.show()
 # print("name is  : ",e.__name)# not  accessible  outside  the class
 # print("age is  : ",e.__age)
+"""
+
+# bank  : 
+
+class bank : 
+    acc_holder_name ="deyan"  # acc_holder_name , acc_no , balance ==> data member
+    bank_name ="HDFC"
+    acc_no =1234567890
+    balance =30000 
+
+    def deposit(self):
+        amt =int(input("enter the  amount  you want  to deposit : "))  # 10000
+        self.balance +=amt 
+        print("your deposit amt is  : ",amt)
+        print("your balance after  deposit :",self.balance)   # 40000 
+
+    def withdraw(self):  # 40000 -33000 ==>7000 
+        amt =int(input("enter the  amount  you want  to withdraw : ")) 
+        if self.balance -amt >=10000 :  # 40000 -3300  >=10000 
+            self.balance -=amt
+            print("your withdraw amt is  : ",amt)
+            print("your balance after  withdraw :",self.balance)  # 30000
+        else :
+            print("not  enough  balance  to  withdraw bcz you have to maintain  minimum  of  10000")
+    
+    def check_balance(self):
+        print("your balance is  : ",self.balance)
+
+    def show(self):
+        print("NAME OF BANK IS  : ",self.bank_name)
+        print("ACC NO IS  : ",self.acc_no)
+        print("ACC HOLDER NAME IS  : ",self.acc_holder_name)
+        print("BALANCE IS  : ",self.balance)
+
+b=bank()
+b.show()
+b.deposit()
+b.withdraw()
+b.check_balance()
+
+"""
+task  :1 
+
+1. pin generate ===>  enter your pin  : 1211  ==> correct  ==> deposit withdraw check balance 
+2 . max attempt 3    ==> thank you. 
+
+
+"""
