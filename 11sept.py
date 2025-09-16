@@ -90,5 +90,4 @@ task  :1
 1. pin generate ===>  enter your pin  : 1211  ==> correct  ==> deposit withdraw check balance 
 2 . max attempt 3    ==> thank you. 
 
-
 """
