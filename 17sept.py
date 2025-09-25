@@ -59,7 +59,8 @@ for i in d,d1:
 
 # constructor over loading  : 
 
-"""class deyaan : 
+"""
+class deyaan : 
     def __init__(self):
         print("deyaan class and it is  default constuctor")
     
@@ -69,4 +70,6 @@ for i in d,d1:
     def __init__(self,name):
         print("kabir class")
         self.name =name
-d=deyaan("deyaan")"""
+d=deyaan("deyaan")
+"""
+
