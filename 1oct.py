@@ -1,4 +1,4 @@
-# multi ple inheritance : 
+# multiple inheritance : 
 """
 class a : 
 class b : 
