@@ -92,4 +92,15 @@ while True:
 id    name    salary
 1     deyaan   9000000  key ==> 1  ==>values   [deyaan,9000000]
 2     kabir    8000     key ==> 2  ==>values   [kabir,8000]
+
+vehicle manag system  : 
+
+id/srno/chasis number  name  ,  model,  speed, color 
+
+1. add vehicle
+2. delete vehicle
+3. update vehicle
+4. serach vehicle
+5. display vehicle
+6.exit   
 """
