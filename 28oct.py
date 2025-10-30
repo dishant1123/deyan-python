@@ -58,3 +58,4 @@ setattr(e,"salary",8000)
 
 print("name is : ",getattr(e,"name"))  # get attr 
 print("salary is  :",getattr(e,"salary"))
+
