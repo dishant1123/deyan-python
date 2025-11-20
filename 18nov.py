@@ -39,8 +39,9 @@ with  open("deyaan.txt","w") as f :
 
 # read: 
 
-with  open("deyaan.txt","r") as f :
+"""with  open("deyaan.txt","r") as f :
     # context =f.read()
     # context =f.readline()
     context =f.readlines()
     print(context)
+"""
