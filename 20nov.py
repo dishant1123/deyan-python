@@ -43,3 +43,4 @@ with  open("deyaan.txt1","a+") as f :
     cont =f.read()
     print(cont)
     f.close()
+
