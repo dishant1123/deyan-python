@@ -4,7 +4,7 @@ tk.tk()
 
 label() ==> display text
 button() ==> clickable
-entry ==> input sigline  input 
+entry ==> input single line  input 
 text  ==> multi  line  input  
 checkbox ==> check box
 checkbutton ==> check box
