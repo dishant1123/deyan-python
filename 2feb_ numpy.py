@@ -39,11 +39,12 @@ c=np.arange(1,33).reshape(2,2,2,4)
 print(c)
 """
 # slicing : 
-a= np.array([1,23,45,67,89,22,56,99])
+# a= np.array([1,23,45,67,89,22,56,99])
 
 # index number start  with  0    ==> pos  ==> l  to  r 
 # neg index number   start  -1:  ==> r  to l 
 
+"""
 print(a[3])
 print(a[-1])
 print(a[3:5])  # 3 start  index  5 end index
@@ -53,4 +54,43 @@ print(a[ : :2])
 print(a[ : :3])
 print(a[ : : -2])
 print(a[ : : -1])
- 
+"""
+
+# 2d array  slicing  : 
+
+a= np.array([[1,2,3,40],[4,5,6,50],[7,8,9,90],[10,11,12,130]])
+"""
+[
+ [ 1  2  3 40]   ===> row index 0 
+ [ 4  5  6 50]  ===> row index 1
+ [ 7  8  9 90]  ===> row index 2
+ [10,11,12,130] ===> row index 3
+
+"""
+print(a)
+print(a[1])
+print(a[1,2])
+print(a[1:3])
+print(a[1:3,0:3])  # 1:3  ==> row  1:3 ==>col
+print(a[:,0:3])  # 1:3  ==> row  1:3 ==>col
+
+print(a[1:3,  : : -1])
+
+"""
+[
+ [ 1  2  3 40]   ===> row index 0 
+ [ 4  5  6 50]  ===> row index 1
+ [ 7  8  9 90]  ===> row index 2
+ [10,11,12,130] ===> row index 3
+]
+
+task :1 
+    print ==> [[5,6],
+                [8,9]]
+task :2 
+    print ==> [1 5 9 130]
+
+task :3 
+    print ==> [[1,40], 
+               [10,130] ]
+"""
