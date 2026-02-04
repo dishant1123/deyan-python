@@ -67,7 +67,7 @@ a= np.array([[1,2,3,40],[4,5,6,50],[7,8,9,90],[10,11,12,130]])
  [10,11,12,130] ===> row index 3
 
 """
-print(a)
+"""print(a)
 print(a[1])
 print(a[1,2])
 print(a[1:3])
@@ -75,7 +75,7 @@ print(a[1:3,0:3])  # 1:3  ==> row  1:3 ==>col
 print(a[:,0:3])  # 1:3  ==> row  1:3 ==>col
 
 print(a[1:3,  : : -1])
-
+"""
 """
 [
  [ 1  2  3 40]   ===> row index 0 
@@ -94,3 +94,55 @@ task :3
     print ==> [[1,40], 
                [10,130] ]
 """
+
+# flatten : 
+
+
+"""a= np.array([[1,2,3,40],[4,5,6,50],[7,8,9,90],[10,11,12,130]])
+
+a1 =a.flatten()  #  its convert to 1d array 
+a1[1] =99
+print(a)
+print(a1)
+"""
+# ravel : 
+
+"""
+a= np.array([[1,2,3,40],[4,5,6,50],[7,8,9,90],[10,11,12,130]])
+
+a1=a.ravel()
+a1[1] =99
+print(a1)
+print(a)
+"""
+# statistical analysis :
+
+"""a= np.array([[1,2,3,40],[4,5,6,50],[7,8,9,90],[10,11,12,130]])
+print(a)
+print(a.sum())  # sum of all elements
+print(a.sum(axis=0))  # sum of all col
+print(a.sum(axis=1))  # sum of all row
+
+print(a.mean())
+print(np.median(a))
+print(np.std(a))
+"""
+#  ex :  1 2 3 4 5 6 7 8 9 10
+# ex : 1 2 3 40 4 5 6 50 7 8 9 90 10 11 12 130  ==> median = ?
+
+# np.one () :
+
+a=np.ones(10,dtype=int).reshape(2,5)
+print(a)
+
+# np.zeros () : 
+"""b=np.zeros(10,dtype=int).reshape(2,5)
+c=np.zeros(32,dtype=int).reshape(2,2,2,4)
+
+print(b)
+print(c)
+"""
+# full :
+
+d=np.full((2,5),fill_value=100)
+print(d)
