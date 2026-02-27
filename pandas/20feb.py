@@ -23,7 +23,7 @@ print(s.head(3))  # default first  5 rows
 print(s.tail())  # default  last 5 rows
 print(s.shape)  # number of rows , number of columns
 print(s.size)  # number of elements
-print(s.ndim)  # number  of  dimnesion
+print(s.ndim)  # number  of  dimension
 print(s.dtype)
 print(s.values)
 print(s.index)
@@ -49,3 +49,6 @@ print("iat",s1.iat[3])
 
 print(s1['a' : 'c'])
 print(s1[['a' , 'c']])
+
+s1[0]=200
+print(s1)
