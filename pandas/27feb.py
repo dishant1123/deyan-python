@@ -56,5 +56,6 @@ print(t2)
 
 # task  :1 
 """
-in  mckinsey.csv ===> year +3   ==>1955   
+in  mckinsey.csv ===> year +3   ==>1955 
+  
 """
