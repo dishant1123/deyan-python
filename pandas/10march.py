@@ -23,7 +23,26 @@ print(df.loc[-1])  # error
 
 # year : 2002  information  print 
 
-result =df.loc[df['year']==2002]
+"""result =df.loc[df['year']==2002]
 print(result)
+"""
+
+# task :1 
+"""
+year ==2001 , life expectancy ,gdp 
+"""
+
+# a=df.loc[df['year']==2007,['life_exp','gdp_cap']] 
+# print(a)
+
+# task  :2 
+"""
+year ==2003 , country =india ,  life expectancy , gdp
+"""
+
+"""a=df.loc[(df['year']==2002) & (df['country']=='India'),['year','country','life_exp','gdp_cap']]
+print(a)
+"""
+# task :3 life_exp  >28 display  
 
 
